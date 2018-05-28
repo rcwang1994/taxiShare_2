@@ -1,0 +1,57 @@
+<view class="container">
+  <view class='startTime'>
+    <text>出发时间：</text>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChange">
+        <view>
+          日期: {{date}} \n
+        </view>
+    </picker>
+  </view>
+    <picker mode="time" value="{{time}}" start="00:01" end="23:59" bindchange="bindTimeChange">
+    <view class="picker">
+      时间: {{time}}
+    </view>
+  </picker>
+
+  <view class="information">
+    <text>容忍提早(分):</text>
+    <input class="input-time" bindinput='inputEarly'></input>
+  </view>
+  <view class="information">
+    <text>容忍推迟(分):</text>
+    <input class="input-time" bindinput='inputDelay'></input>
+  </view>
+
+  <view class="information">
+    <text>出发地:</text>
+    <picker bindchange="bindOriginChange" value="{{index1}}" range="{{array}}">
+        <view class="picker-place">
+          {{array[index1]}}
+        </view>
+    </picker>
+  </view>
+
+  <view class="information">
+    <text>目的地:</text>
+    <picker bindchange="bindDestinationChange" value="{{index2}}" range="{{array}}">
+        <view class="picker-place">
+          {{array[index2]}}
+        </view>
+    </picker>
+  </view>
+
+  <view class='information'>
+    <text>拼车人数:</text>
+    <picker bindchange='bindMemberNum' range="{{array2}}">
+      <view>{{array2[index3]}}
+      </view>
+    </picker>
+  </view>
+
+</view>
+
+
+
+<view class='info-btn'>
+    <button bindtap='updateJourInfo'>确认</button>
+</view>

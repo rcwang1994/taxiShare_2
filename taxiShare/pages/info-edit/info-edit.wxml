@@ -1,0 +1,52 @@
+<view class='page'>
+  <view class='page-head'>
+    <view class='head-title'>个人信息编辑</view>
+    <view class='head-text'>请保证信息准确</view>
+  </view>
+  <view class='page-edit'>
+    <form class='edit-form' bindsubmit="formSubmit" bindreset="formReset">
+      <view class='form-item'>
+        <view class='form-title'>姓名</view>
+        <input class='form-input' name='name' placeholder='请输入真实姓名' value='{{name}}'></input>
+      </view>
+      <view wx:if="{{errorName}}">{{statudName}}</view>
+      <view class='form-item'>
+        <view class='form-title'>微信号</view>
+        <input class='form-input' name='wechat' placeholder='请输入微信号' value='{{wechat}}'></input>
+      </view>
+      <view wx:if="{{errorWechat}}">{{statudWechat}}</view>
+      <view class='form-item'>
+        <view class='form-title'>手机号</view>
+        <input class='form-input' name='phone' placeholder='请输入手机号' value='{{phone}}'></input>
+      </view>
+      <view wx:if="{{errorPhone}}">{{statudPhone}}</view>
+      <view class='form-item'>
+        <text class='form-title' decode='true'>性&nbsp;&nbsp;别</text>
+        <radio-group class="radio-group" name='gender'>
+          <radio value="1" checked="{{gender1}}" />男
+          <radio value="2" checked="{{gender2}}" />女
+        </radio-group>
+      </view>
+      <view wx:if="{{errorGender}}">{{statudGender}}</view>
+      <!-- <view class='form-item'>
+        <view class='form-title' decode='true'>学历</view>
+        <picker class='form-picker' name='identity' bindchange="bindPickerChange" mode='selector' value="{{education}}" range="{{educationArray}}"></picker>
+        <view>{{educationArray[education]}}
+        </view>
+      </view> -->
+      <view class="weui-cell weui-cell_select form-item">
+        <view class='form-title' decode='true'>学历</view>      
+        <view class="weui-cell__bd">
+          <picker name='identity' bindchange="bindPickerChange" value="{{education}}" range="{{educationArray}}">
+            <view class="weui-select">{{educationArray[education]}}</view>
+          </picker>
+        </view>
+      </view>
+      <view wx:if="{{errorGender}}">{{statudGender}}</view>
+      <view class='button-area'>
+        <button class='button-cancle' formType="reset">返回</button>      
+        <button class='button-submit' formType="submit">提交</button>
+      </view>
+    </form>
+  </view>
+</view>

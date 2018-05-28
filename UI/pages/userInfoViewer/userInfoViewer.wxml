@@ -1,0 +1,32 @@
+<view class="container">
+  <view class='information'>
+    <text class='nickname'>昵称：{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="information">
+    <text>微信号:</text>
+    <text>{{weChatNum}}</text>
+  </view>
+
+  <view class="information">
+    <text>身份:</text>
+    <text>{{post}}</text>
+  </view>
+
+  <view class='information'>
+    <text class='gender'>性别：{{genderArray[userInfo.gender]}}</text>
+  </view>
+
+  <view class='information'>
+    <text>手机号:</text>
+    <text>{{telNum}}</text>
+  </view>
+
+</view>
+
+
+
+<view class='edit-btn'>
+    <button bindtap='clickEditInfo'>编辑</button>
+    <button bindtap='clickBack'>返回</button>
+</view>

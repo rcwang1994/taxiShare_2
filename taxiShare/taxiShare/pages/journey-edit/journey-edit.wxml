@@ -1,0 +1,55 @@
+<view class='page'>
+  <!-- <view class='page-head'>
+    <view class='head-title'>行程信息编辑</view>
+    <view class='head-text'>请保证信息准确</view>
+  </view> -->
+
+  <view class='page-edit'>
+    <form class='edit-form' bindsubmit="formSubmit" bindreset="formReset">
+      <view class='form-item'>
+        <view class='form-title'>出发日期：</view>
+        <picker name='date' mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChange">
+          <view class='picker-date'>{{date}}</view>
+        </picker>
+      </view>  
+      <view class='form-item'> 
+        <view class='form-title'>出发时间：</view>
+        <picker name='time'mode="time" value="{{time}}" start="00:01" end="23:59" bindchange="bindTimeChange">
+          <view class="picker-time">{{time}}</view>
+        </picker>
+      </view>
+      <view class='form-item'>
+        <view class='form-title'>容忍提早(min)：</view>
+        <input class='form-input' name='advance' placeholder='请输入'value='{{advance}}'></input>
+      </view>
+      <view class='form-item'>
+        <view class='form-title'>容忍推迟(min)：</view>
+        <input class='form-input' name='delay' placeholder='请输入'value='{{delay}}'></input>
+      </view>
+      <view class='form-item'>
+        <view class='form-title'>出发地：</view>
+        <picker name='start' bindchange="bindDepartureChange" value="{{index1}}" range="{{array}}">
+          <view class="picker-place">{{array[index1]}}</view>
+        </picker>
+      </view>
+      <view class='form-item'>
+        <view class='form-title'>目的地：</view>
+        <picker name='end' bindchange="bindDestinationChange" value="{{index2}}" range="{{array}}">
+          <view class="picker-place">{{array[index2]}}</view>
+        </picker>
+      </view>
+      <view class='form-item'>
+        <view class='form-title'>拼车人数：</view>
+        <picker name='people' bindchange='bindMemberNum' range="{{array2}}">
+          <view class='member-num'>{{array2[index3]}}</view>
+        </picker> 
+      </view>
+      <view class='button-area'>
+        <button class='button-submit' formType="submit">提交</button>
+        <button class='button-reset' formType="reset">返回</button>
+      </view>
+    </form>
+  </view>
+  <view class='page-button'>
+  </view>
+</view>

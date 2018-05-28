@@ -1,0 +1,72 @@
+.page {
+  position: relative;
+  width: 750rpx;
+  height: 1206rpx;
+  font-size: 16px;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  background-color: #efefef;
+}
+.page-head {
+  display: flex;
+  height: 280rpx;
+  flex-direction: column;
+  padding: 35rpx;   
+  align-items: center;
+  background: #7aabf9;
+}
+
+.info-avatar {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+}
+
+.info-nickname {
+  margin-top: 40rpx;
+  font-size: 40rpx;
+  color: #fff;
+}
+.page-info{
+  width: 750rpx;
+  height: 600rpx;
+  font-size: 40rpx;
+  padding-top: 30rpx;
+  background-color: #fff;
+}
+.info-item{ 
+  position: relative;
+  display: flex;
+  width: 720rpx;
+  height: 60rpx;
+  padding: 15rpx;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #dadada; 
+}
+.info-f1{
+  width: 160rpx;
+  margin-left: 40rpx;
+}
+.info-f2{
+  width:500rpx;
+  margin-left: 40rpx;  
+}
+.page-button{
+  display: flex;
+  width: 750rpx;
+  height: 228rpx;
+  background-color: #fff;
+}
+.button-cancle{
+  width: 300rpx;
+  height: 100rpx;
+}
+.button-edit{
+  width: 300rpx;
+  height: 100rpx;
+  color: #fff;
+  background-color: #7aabf9;
+}

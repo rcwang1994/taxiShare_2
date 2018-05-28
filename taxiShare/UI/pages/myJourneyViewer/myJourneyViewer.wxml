@@ -1,0 +1,33 @@
+<view class="container">
+  <view class='information'>
+    <text>出发时间：</text>
+    <text>{{date}} {{time}}</text>
+  </view>
+
+  <view class="information">
+    <text>容忍提早(分):{{early}}</text>
+  </view>
+  <view class="information">
+    <text>容忍推迟(分):{{delay}}</text>
+  </view>
+
+  <view class="information">
+    <text>出发地:{{origin}}</text>
+  </view>
+
+  <view class='information'>
+    <text>目的地：{{destination}}</text>
+  </view>
+
+  <view class='information'>
+    <text>拼车人数:{{memberNum}}</text>
+  </view>
+
+</view>
+
+
+
+<view class='edit-btn'>
+    <button bindtap='clickEditJour'>编辑</button>
+    <button bindtap='clickBack'>分享1+分享2</button>
+</view>

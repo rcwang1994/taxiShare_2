@@ -1,0 +1,23 @@
+.form-item{
+  display: flex;
+  padding: 20rpx;
+}
+.form-title{
+  width: 160rpx;
+}
+.button-area{
+  display: flex;
+  width: 750rpx;
+  height: 228rpx;
+  background-color: #fff;
+}
+.button-cancle{
+  width: 300rpx;
+  height: 100rpx;
+}
+.button-submit{
+  width: 300rpx;
+  height: 100rpx;
+  color: #fff;
+  background-color: #7aabf9;
+}

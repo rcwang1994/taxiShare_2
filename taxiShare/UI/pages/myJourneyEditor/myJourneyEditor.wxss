@@ -1,0 +1,36 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 15%;
+}
+.startTime{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.information{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50rpx;
+}
+
+
+.info-btn{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.picker{
+  margin-left: 190rpx;
+}
+.picker-place{
+  margin-left: 50rpx;
+}
+
+.input-time{
+  border-bottom: 1px solid black;
+  width: 30%;
+}

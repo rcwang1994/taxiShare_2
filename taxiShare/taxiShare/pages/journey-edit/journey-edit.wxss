@@ -1,0 +1,75 @@
+.page{
+ position: relative;
+  width: 750rpx;
+  height: 1206rpx;
+  font-size: 16px;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  background-color: #fff;
+}
+.page-edit{
+  width: 750rpx;
+  height: 900rpx;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+.edit-form{
+  display: flex;
+  flex-wrap: warp;
+  width: 750rpx;
+  height: 900rpx;
+}
+.form-item{
+  display: flex;
+  width: 750rpx;
+  height: 60rpx;
+  margin-top: 30rpx;
+  flex-wrap: nowrap;
+  font-size: 38rpx;
+}
+
+.form-title{
+  width: 300rpx;
+  margin-left: 30rpx;
+}
+.picker-date{
+  width: 420rpx;
+}
+.picker-time{
+  width: 420rpx;
+}
+.picker-place{
+  width: 420rpx;
+}
+.member-num{
+  width: 420rpx;
+}
+.button-area{
+width: 750rpx;
+height: 200rpx;
+align-items: center;
+margin-top: 70rpx;
+}
+.button-submit{
+  margin-top: 40rpx;
+  width: 500rpx;
+  height: 80rpx;
+  background-color: #7aabf9;
+}
+.button-reset{
+  margin-top: 40rpx;
+  width: 500rpx;
+  height: 80rpx;
+  background-color: #7aabf9;
+}
+.page-button{
+  margin-top: 40rpx;
+  width: 750rpx;
+  height: 266rpx;
+  background-color: #fff;
+  align-items: center;
+}
+.button-back{
+   width: 500rpx;
+   height: 80rpx;
+}

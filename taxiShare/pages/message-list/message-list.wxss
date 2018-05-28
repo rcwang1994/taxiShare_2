@@ -1,0 +1,142 @@
+.container{
+  width: 750rpx;
+  height: 1206rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff
+}
+.page-header{
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 30rpx; */
+  width: 750rpx;
+  height: 200rpx;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  /* border-bottom: 1px solid lightgray; */
+}
+.head-button{
+  display: flex;
+  width: 715rpx;
+  height: 100rpx;
+  justify-content:space-around;  
+  align-items:flex-end;
+
+   /* margin-top: 440rpx;  */
+  /* background-color: #000; */
+}
+.weui-navbar{
+  display: flex;
+  width: 715rpx;
+  height: 100rpx;
+  margin-top: 100rpx;
+  /* background-color: #000 */
+}
+
+.message-search{
+  width: 700rpx;
+  height: 60rpx;
+  margin-top: 30rpx;
+  padding-top: 5rpx;
+  padding-left: 15rpx;
+  padding-bottom: 5rpx;
+  border-radius: 10rpx;
+  align-items: center;
+  background-color:#efefef
+}
+.message-btn{
+   display: flex;
+   width: 240rpx;
+   height: 60rpx;
+   justify-content: center; 
+   align-items: center;
+  
+}
+.page-body{
+  width: 750rpx;
+  height:1006rpx;
+  background: #fff;
+}
+.content{
+   width: 100%;
+  height:100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.content-item{
+  display: flex;
+  width: 100%;
+  height:250rpx;
+  background-color: #fff;
+ 
+   
+}
+.list-image{
+  width: 100rpx;
+  height:250rpx;
+  padding-top: 10rpx;
+  padding-left: 40rpx;
+}
+.image{
+  width: 100rpx;
+  height:100rpx;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+}
+.list-content{
+  display: flex;
+  flex-direction: column;
+  width: 610rpx;
+  height:250rpx;
+  background-color: #fff;
+}
+.list-header{
+  display: flex;
+  width: 610rpx;
+  height:100rpx;
+  align-items: center;
+  justify-content:space-between;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  font-size: 30rpx;
+  color: #B2B2B2;
+}
+.list-body{
+  width: 590rpx;
+  height:150rpx;
+  margin-right: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid lightgray;
+  font-size: 30rpx;
+  color: #B2B2B2;
+}
+.list-username{
+  display: flex;
+  width: 300rpx;
+  align-items: center;
+  /* margin-left: 30rpx; */
+  /* justify-content: center; */
+  /* background-color: #ddd; */
+}
+.list-time{
+  width: 270rpx;
+  /* background-color: #ddd; */
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+}
+.list-read{
+  /* background-color: #ddd; */
+  width: 80rpx;
+  margin-right: 30rpx;
+}
+.list-username{
+  font-size: 35rpx;
+  color: #000;
+}

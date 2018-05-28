@@ -1,0 +1,98 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wx5bceaf7991ba27b8",
+	"projectname": "taxiShare",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "info-view",
+					"pathName": "pages/info-view/info-view",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "info-edit",
+					"pathName": "pages/info-edit/info-edit",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "team",
+					"pathName": "pages/team/team",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "team-member",
+					"pathName": "pages/team-member/team-member",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "message-list",
+					"pathName": "pages/message-list/message-list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "journey-edit",
+					"pathName": "pages/journey-edit/journey-edit",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "journey-view",
+					"pathName": "pages/journey-view/journey-view",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "message-detail",
+					"pathName": "pages/message-detail/message-detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "team-share",
+					"pathName": "pages/team-share/team-share",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "journey-share",
+					"pathName": "pages/journey-share/journey-share",
+					"query": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,55 @@
+<view class="page-body">
+
+  <view class="page-section">
+    <view class="page-section-title">站点信息</view>
+    <view class="rich-text-place-title">
+      <view class="rich-text-place-title-image">
+        <image src="../../sources/1.png" class="title-image" />
+      </view>
+      <view class="myDeparture">出发地</view>
+      <view class="myDestination">目的地</view>
+    </view>
+    <view class="rich-text-place-name">
+      <view class="Departure">{{Departure}}</view>
+      <view class="Destination">{{Destination}}</view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title2">最晚时间</view>
+    <view class="rich-text-final-time">
+      <view class="FinalTime">{{FinalTime}}</view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title2">团队成员</view>
+    <view class="rich-text-members">
+
+
+
+      <view class="members-item0">
+        <view class="rich-text-members-text">
+          <text>队长:</text>
+        </view>
+        <view class="rich-text-members-btn">
+          <button class="members-btn">{{captain}}</button>
+        </view>
+      </view>
+
+      <view class="members-item" wx:for="{{membersItems}}">
+        <view class="rich-text-members-text">
+          <text>{{membersName}}</text>
+        </view>
+        <view class="rich-text-members-btn">
+          <button class="members-btn">{{soldier}}</button>
+        </view>
+        <view class="member-delete-btn">
+          <button class="delete-btn" name='deletebtn'>删除</button>
+        </view>
+      </view>
+      <view class="members">{{members}}</view>
+    </view>
+  </view>
+  <button open-type='share'>分享团队</button>
+</view>

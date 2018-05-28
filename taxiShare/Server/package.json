@@ -1,0 +1,40 @@
+{
+  "name": "management-baoma",
+  "version": "2.0.0",
+  "description": "Baoma drill management system",
+  "license": "UNLICENSED",
+  "private": true,
+  "keywords": [
+    "node",
+    "express",
+    "redis",
+    "mysql"
+  ],
+  "main": "app.js",
+  "scripts": {
+    "start": "pm2 start app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cheerio": "^0.20.0",
+    "compression": "^1.6.2",
+    "connect-redis": "^3.3.0",
+    "ejs": "^2.5.6",
+    "express": "^4.16.3",
+    "express-session": "^1.15.2",
+    "finalhandler": "^1.1.1",
+    "merge-descriptors": "^1.0.1",
+    "morgan": "^1.8.1",
+    "mysql": "^2.13.0",
+    "redis": "^2.8.0",
+    "serve-favicon": "^2.4.2",
+    "url": "^0.11.0",
+    "webshot": "^0.18.0"
+  },
+  "devDependencies": {
+    "encoding": "^0.1.12",
+    "express-session": "^1.15.6",
+    "finalhandler": "^1.1.1",
+    "path-to-regexp": "^2.2.0"
+  }
+}

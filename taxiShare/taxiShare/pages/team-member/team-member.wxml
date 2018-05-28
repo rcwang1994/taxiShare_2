@@ -1,0 +1,44 @@
+<view class="container">
+
+  <view class="header">
+    <view class="item-image">
+      <image src="../../Sources/1.png" class="Userscl"/>
+    </view>
+  </view>
+  <view class="pagebody">
+
+  <view class="item">
+    <text>昵称:</text>
+    <view class="real-item">
+      <text class="nikeName"></text>
+    </view>
+  </view>
+
+  <view class="item">
+    <text>性别:</text>
+    <view class="real-item">
+      <text class="gender"></text>
+    </view>
+  </view>
+
+  <view class="item">
+    <text>身份:</text>
+    <view class="real-item">
+      <text class="vocation"></text>
+    </view>
+  </view>
+
+  <view class="item">
+    <text>微信号:</text>
+   
+      <text class="WechatId"></text>
+  
+  </view>
+
+  <view class="item">
+    <button class="copyWechatId">复制微信号</button>
+    <button class="copyWechatId" bindtap="goBack">返回</button>
+  </view>
+
+</view>
+</view>

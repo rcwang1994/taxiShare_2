@@ -1,0 +1,114 @@
+<view class="container">
+  <view class="page-header">
+    <view class="message-search">
+      <input placeholder="搜索"/>
+    </view>
+    <view class="head-button">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);" ></view>
+      </view>
+    </view>
+  </view>
+
+ <view class="page-body">
+    <scroll-view scroll-y >
+      <view class="content">
+        <view hidden="{{activeIndex != 0}}">
+          <view class="content-item" wx:for="{{contentItems}}">
+          
+            <view class="list-image">
+              <view class="image">
+                  <open-data class='info-avatar' type="userAvatarUrl"></open-data>
+              </view>
+            </view>
+          
+            <view class="list-content">
+              <view class="list-header">
+                <view class="list-username">
+                    <open-data class="info-nickname" type='userNickName'></open-data>
+              </view>
+                <view class="list-time">
+                  <text>{{listTime}}</text>
+                </view>
+                <view class="list-read">
+                  <text>{{listRead}}</text>
+                </view>
+              </view>
+              <view class="list-body">
+                <text>{{captainText}}</text>
+              </view>
+            </view>
+         </view>
+        </view>
+
+        <view hidden="{{activeIndex != 1}}">
+          <view class="content-item" wx:for="{{contentItems}}">
+          
+            <view class="list-image">
+              <view class="image">
+                  <open-data class='info-avatar' type="userAvatarUrl"></open-data>
+              </view>
+            </view>
+          
+            <view class="list-content">
+              <view class="list-header">
+                <view class="list-username">
+                    <open-data class="info-nickname" type='userNickName'></open-data>
+              </view>
+                <view class="list-time">
+                  <text>{{listTime}}</text>
+                </view>
+                <view class="list-read">
+                  <text>{{listRead}}</text>
+                </view>
+              </view>
+              <view class="list-body">
+                <text>{{memberText}}</text>
+              </view>
+            </view>
+         </view>
+        </view>
+
+
+        <view hidden="{{activeIndex != 2}}">
+          <view class="content-item" wx:for="{{contentItems}}">
+          
+            <view class="list-image">
+              <view class="image">
+                  <open-data class='info-avatar' type="userAvatarUrl"></open-data>
+              </view>
+            </view>
+          
+            <view class="list-content">
+              <view class="list-header">
+                <view class="list-username">
+                    <open-data class="info-nickname" type='userNickName'></open-data>
+              </view>
+                <view class="list-time">
+                  <text>{{listTime}}</text>
+                </view>
+                <view class="list-read">
+                  <text>{{listRead}}</text>
+                </view>
+              </view>
+              <view class="list-body">
+                <text>{{systemText}}</text>
+              </view>
+            </view>
+         </view>
+        </view>
+
+
+
+
+      </view>
+    </scroll-view>
+  </view>
+
+
+</view>

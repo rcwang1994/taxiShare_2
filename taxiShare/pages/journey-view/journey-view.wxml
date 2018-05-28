@@ -1,0 +1,29 @@
+<view class='page'>
+  <view class='page-journey'>
+    <view class='page-card'>
+      <view class='card-station'>
+        <view class='station-departure'>{{array[departure]}}</view>
+         <view class='station-arrow'>
+          <image src='../../sources/down.png'></image>
+        </view> 
+        <view class='station-destination'>{{array[destination]}}</view>
+      </view>
+      <view class='card-time'>
+        <view class='card-date'>{{date}}</view>
+        <view class='card-time1'>{{time1}}</view>
+        <view class='card-dash' >—</view>
+        <view class='card-time2' >{{time2}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='page-info'>
+    <view class='member-num'>拼车人数：{{people}}人</view>
+  </view>
+
+  <view class='page-button'>
+    <button class='button-share' open-type='share'>分享行程信息</button>
+    <button class='button-group' bindtap='generateTeam'>组建团队</button>
+    <button class='button-edit' bindtap='edit'>编辑</button>
+    <button class='button-back' open-type='navigateBack' delta='1' bindtap='goBack'>返回</button>
+  </view>
+</view>

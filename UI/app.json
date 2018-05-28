@@ -1,0 +1,18 @@
+{
+  "pages": [
+  "pages/myCenter/myCenter",
+  "pages/myJourneyEditor/myJourneyEditor",
+  "pages/myJourneyViewer/myJourneyViewer",
+  "pages/userInfo/userInfo",
+  "pages/userInfoViewer/userInfoViewer"
+
+],
+
+  
+   "window": {
+    "navigationBarBackgroundColor": "#aaaaaa",
+    "navigationBarTextStyle": "black"
+    
+    }
+
+}

@@ -1,0 +1,126 @@
+rich-text {
+  width: 700rpx;
+  padding: 25rpx 0;
+}
+
+.rich-text-place-title {
+  padding: 0 25rpx;
+  background-color: #fff;
+  height: 110rpx;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.rich-text-place-name {
+  padding: 0 25rpx;
+  background-color: #fff;
+  height: 110rpx;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+.rich-text-place-title-image{
+  height: 40rpx;
+  width: 60rpx;
+  position: absolute;
+  margin-top: 60rpx;
+}
+.title-image{
+  height: 100%;
+  width: 100%;
+}
+.rich-text-final-time {
+  padding: 0 25rpx;
+  background-color: #fff;
+  margin: 20rpx;
+  height: 90rpx;
+}
+.rich-text-members {
+  display: flex;
+  flex-direction:column;
+  padding: 0 25rpx;
+  background-color: #fff;
+  margin: 20rpx;
+  height: 460rpx;
+}
+.members-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
+  /* margin-bottom: 40rpx; */
+}
+.members-item0{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 20rpx;
+  margin-left: 0rpx;
+}
+.delete-btn{
+  padding-left: 30rpx;
+  margin-left: 10rpx;
+}
+.rich-text-members-text{
+  width:120rpx;
+  font-size: 40rpx;
+  /* background: #888; */
+  /* padding-left: 50rpx; */
+}
+.members-btn{
+  width: 400rpx;
+  background: #09BB07;
+}
+.page-section{
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+
+
+.myDeparture{
+   width: 160rpx;
+   font-size: 50rpx;
+
+  flex-direction: column;
+  justify-content: center;
+   padding:40rpx;
+}
+.Departure{
+  width: 80rpx;
+   font-size: 40rpx;
+
+  padding:30rpx;
+}
+.myDestination{
+   width: 160rpx;
+   font-size: 50rpx;
+
+  padding:40rpx;
+}
+.Destination{
+  width: 80rpx;
+   font-size: 40rpx;
+
+ padding:30rpx;
+}
+.FinalTime{
+  width: 460rpx;
+  font-size: 40rpx;
+  padding:20rpx;
+}
+.page-section-title{
+  font-size: 35rpx;
+  color: #999999;
+  margin-top:  50rpx;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.page-section-title2{
+  font-size: 35rpx;
+  color: #999999;
+  margin-top: -40rpx;
+ 
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
